@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #094E5F;
+    --background: #09454f;
     --foreground: #ededed;
   }
 }
@@ -28,4 +28,24 @@ body {
   color: var(--foreground);
   font-family: "Be Vietnam Pro", sans-serif;;
   transition: 0.2s ease;
+  animation-name:bgAnimi;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  transition: 1s ease;
+
+}
+
+@keyframes bgAnimi{
+  0%{
+    background-color:linear-gradient(#15454e,#0F697B) ;
+  /* background: linear-gradient(to right, var(--background) , #166B7C); */
+
+    transition: 1s ease;
+  }
+
+  100%{
+      background-color: #063944;
+      transition: 1s ease;
+  }
 }

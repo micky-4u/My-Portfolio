@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import Header from "@/components/header";
 import "@/app/local.css";
@@ -6,10 +8,33 @@ import ProjectCard from "@/components/project-card";
 import { metadata } from "./layout";
 import {certificationData} from "@/utils/certification-data";
 import CertificationCard from "@/components/certification-card";
+import { useEffect, useState } from "react";
 // images
 
 
 export default function Home() {
+  const [bg, setBg]=useState("")
+  const [bg1, setBg1]=useState("")
+  
+      // useEffect(()=>{
+      //   window.onscroll =()=>{
+          
+      //     if(scrollY > 277){
+      //       setBg("")
+      //       // console.log(scrollY)
+      //     }
+          
+          
+      //     if(scrollY > 1250){
+      //       setBg1("")
+      //       // console.log(scrollY)
+      //     } 
+
+      //   }
+      // },[])
+ 
+
+
   return (
     <div className="main" >
       <Header />
@@ -26,7 +51,7 @@ export default function Home() {
 
 
       {/* Personal Projects  */}
-      <div className="projects" id="Projects">
+      <div className={`projects ${bg}`} id="Projects">
         <h1> Projects</h1>
 
         <div className="items">
@@ -39,7 +64,7 @@ export default function Home() {
 
 
       {/* Certifications  */}
-      <div id="Certifications" className="certifications">
+      <div id="Certifications" className={`certifications ${bg1}`}>
         <h1> Certifications</h1>
         <div className="items">
           {
