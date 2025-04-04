@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #09454f;
+    --background: #083138;
     --foreground: #ededed;
   }
 }
@@ -28,11 +28,11 @@ body {
   color: var(--foreground);
   font-family: "Be Vietnam Pro", sans-serif;;
   transition: 0.2s ease;
-  animation-name:bgAnimi;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-direction: alternate;
-  transition: 1s ease;
+  /* animation-name:bgAnimi; */
+  /* animation-iteration-count: infinite; */
+  /* animation-duration: 3s; */
+  /* animation-direction: alternate;
+  transition: 1s ease; */
 
 }
 
