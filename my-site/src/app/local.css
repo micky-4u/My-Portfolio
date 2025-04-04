@@ -14,11 +14,11 @@
     width: 100%;
     height: 70px;
     display: flex ;
-    padding:0px 20px 0px 50px;
+    padding:0px 20px 0px 30px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 99999;
     transition: 0.5s ease;
@@ -76,7 +76,7 @@
 .content{
     display: flex;
     padding-left: 50px;
-    margin-top: 100px;
+    margin-top: 280px;
     animation-name:showIn;
     animation-duration: 2s;
 }
@@ -277,4 +277,81 @@
     width: 100%;
     height: 130px;
     object-fit: contain;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main{
+        overflow-x: hidden;
+    }
+    .header ul{
+        display: none;
+    }   
+    .content{
+        align-items: center;
+        padding-left: 0px;
+        padding: 5px;
+    }
+    .content h1, .projects h1, .certifications h1, .production-tools h1{
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 30px;
+        text-align: center;
+        width: 203px;
+        width: 100%;
+    }
+    .content p{
+        font-size: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    .main .content .button{
+        transform: scale(1.2);
+    }
+
+    .main hr{
+        display: none;
+    }
+    .projects, .certifications, .production-tools{
+        width:100%;
+        padding-left: 0px;
+        position: relative;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .projects h1, .certifications h1,.production-tools h1 {
+        font-size: 25px;
+    }
+    .project-card{
+        /* width: 90%; */
+    }
+    .project-card .title{
+        flex-direction: column;
+    }
+    .project-card .title div{
+        border: none;
+    }
+    .project-card .title h2{
+        text-align: center;
+    }
+
+    .certifications .items{
+        gap:10px;
+    }
+    
+
+    .certifications .images{
+        transform: scale(0.8);
+    }
+
+    .production-tools div{
+        height: 128px;
+        transform: scale(0.8);
+    }
+
 }
