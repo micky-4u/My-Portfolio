@@ -10,6 +10,7 @@ import {certificationData} from "@/utils/certification-data";
 import CertificationCard from "@/components/certification-card";
 import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
+import Sidebar from "@/components/sidebar"
 // import cv from "@/utils/cv/Michael_Tetteh_cv.pdf";
 // images
 
@@ -40,12 +41,13 @@ export default function Home() {
   return (
     <>
     <Header />
+    <Sidebar />
     <div className="main" id="Home">
       <div className="content" >
        <h1>Hi,</h1>
        <h1>I'm Michael Laryea Tetteh</h1>
        <h1>Software Engineer</h1>
-        <p>I'am passionate about building scalable and efficient solutions. I specialize in web and software development, creating intuitive and high-performing applications.</p>
+        <p>I'am passionate about building scalable and efficient solutions. I specialize in web and software development, creating intuitive and high-performing applications and building cloud based solutions.</p>
         <a href="../utils/cv/Michael_Tetteh_cv.pdf" download><button className='button'>Download CV</button></a>
 
       </div>

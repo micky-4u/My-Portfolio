@@ -15,7 +15,7 @@ export const projectsData = [
         "id": 1,
         "title": "Learning Management System",
         "metadata": {
-            "link": "https://www.example.com",
+            "link": "https://github.com/micky-4u/Prudent-Child-School",
             "description": "This is a project about something",
             "imagePaths": [],
             "tools" : [python,dj,react,pos],
@@ -26,7 +26,7 @@ export const projectsData = [
         "id": 6,
         "title": "LightView Insurance App",
         "metadata": {
-            "link": "https://www.example.com",
+            "link": "https://github.com/micky-4u/LightView-Insurance",
             "description": "This is a project about something",
             "imagePaths": [],
             "tools": [python,dj],
@@ -37,7 +37,7 @@ export const projectsData = [
         "id": 2,
         "title": "Real Estate Website",
         "metadata": {
-            "link": "https://www.example.com",
+            "link": "https://github.com/micky-4u/Real-Estate",
             "description": "This is a project about something",
             "imagePaths": [],
             "tools": [html,css,js,react,sql],
@@ -50,7 +50,7 @@ export const projectsData = [
         "id": 3,
         "title": "Circa Website",
         "metadata": {
-            "link": "https://www.example.com",
+            "link": "https://github.com/micky-4u/Circa-Website",
             "description": "This is a project about something",
             "imagePaths": [],
             "tools": [js,react],
@@ -61,7 +61,7 @@ export const projectsData = [
         "id": 4,
         "title": "Prompt-Rocket Website",
         "metadata": {
-            "link": "https://www.example.com",
+            "link": "https://github.com/micky-4u/Prompt-Rocket",
             "description": "This is a project about something",
             "imagePaths": [],
             "tools": [js , react],

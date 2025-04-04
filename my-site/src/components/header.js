@@ -16,8 +16,20 @@ export default function Header(props) {
 
     // const [bg3, setBg3]=useState("")
 
-
+    const handleSideBar=()=>{
+      console.log("button clicked")
+      document.getElementById("sidebar").classList.add("showSide")
+      document.getElementById("open").classList.add("hide")
+      document.getElementById("close").classList.remove("close")
+      // document.getElementById("close").classList.add("show")
+    }
    
+    const hideSideBar =()=>{
+      document.getElementById("sidebar").classList.remove("showSide")
+      document.getElementById("open").classList.remove("hide")
+      document.getElementById("close").classList.add("close")
+
+    }
     const links =["Micky4u","Projects","Certifications","Production Tools"]
 
     
@@ -32,8 +44,11 @@ export default function Header(props) {
         <div className='headLogo'>
           <p>Micky4u</p>
         </div>
-        <div className='sideIcon'>
-          <i className="fa fa-align-right" style={{fontSize:'20px'}}></i>
+        <div className='sideIcon' id='open'>
+          <i className="fa fa-align-right" onClick={handleSideBar} style={{fontSize:'20px'}}></i>
+        </div>
+        <div  className="close" id='close' onClick={hideSideBar}>
+            <p>x</p>
         </div>
         <div className='contacts'>
           <a href="https://github.com/micky-4u" target='_blank' ><Image src={github} alt=''/></a>
