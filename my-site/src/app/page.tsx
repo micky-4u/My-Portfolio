@@ -54,8 +54,11 @@ export default function Home() {
 
 
       {/* Personal Projects  */}
-      <div className={`projects ${bg}`} id="Projects">
+      <div className="projects" id="Projects">
         <h1> Projects</h1>
+        <div className="search">
+          <input type="text" placeholder="Search" />
+        </div>
 
         <div className="items">
           {projectsData.map((project) => (

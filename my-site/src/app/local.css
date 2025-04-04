@@ -24,6 +24,10 @@
     transition: 0.5s ease;
 }
 
+.header .sideIcon{
+    display: none;
+}
+
 .header img{
     height: 30px;
     width: 30px;
@@ -42,6 +46,10 @@
     color: #fff;
 }
 
+
+.header .headLogo{
+    display: none;
+}
 .header ul{
     display: flex;
     list-style: none;
@@ -313,9 +321,23 @@
     .main{
         overflow-x: hidden;
     }
+    .header{
+        /* flex-direction: row-reverse; */
+    }
     .header ul{
         display: none;
     }   
+    .header .contacts{
+        display: none;
+    }
+
+    .header .sideIcon{
+        display: flex;
+    }
+
+    .header .headLogo{
+        display: flex;
+    }
     .content{
         align-items: center;
         padding-left: 0px;
@@ -356,6 +378,10 @@
     .projects h1, .certifications h1,.production-tools h1 {
         font-size: 25px;
     }
+
+    .projects .search{
+        display: none;
+    }    
     .project-card{
         /* width: 90%; */
     }

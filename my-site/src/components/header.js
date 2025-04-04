@@ -29,12 +29,18 @@ export default function Header(props) {
 
             ))}
         </ul>
+        <div className='headLogo'>
+          <p>Micky4u</p>
+        </div>
+        <div className='sideIcon'>
+          <i className="fa fa-align-right" style={{fontSize:'20px'}}></i>
+        </div>
         <div className='contacts'>
           <a href="https://github.com/micky-4u" target='_blank' ><Image src={github} alt=''/></a>
           <a href="https://www.linkedin.com/in/michael-tetteh-a5a9a6220/" target='_blank'><Image src={linkedIn} alt=''/></a>
           <a href="mailto:laryeamichael4u@gmail.com" target='_blank'><Image src={mail} alt=''/></a>
           <Image src={phone} alt=''/>
-          <p>+233 55868 5990</p>
+          <p>+233 55 868 5990</p>
 
 
         </div>
