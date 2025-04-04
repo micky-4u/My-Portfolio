@@ -6,8 +6,8 @@
     opacity: 1;
 }
 .oncover{
-    background-color: #244A56;
-    box-shadow: 0px 3px 20px #000 ;
+    background-color: #09454f;
+    box-shadow: 0px 1px 20px #000 ;
     transition: 0.3s ease;
 }
 .header{
@@ -22,6 +22,24 @@
     top: 0px;
     z-index: 99999;
     transition: 0.5s ease;
+}
+
+.header img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.header .contacts{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.header .contacts a{
+    color: #fff;
 }
 
 .header ul{
@@ -268,7 +286,6 @@
 }
 .production-tools div{
     position: relative;
-    height: 200px;
     width: 200px;
     object-fit: contain;
 }
@@ -279,6 +296,18 @@
     object-fit: contain;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0px;
+    background-color: #0a2b31;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    flex-direction: column;
+}
 
 @media only screen and (max-width: 600px) {
     .main{
