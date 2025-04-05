@@ -48,7 +48,7 @@ export default function Header(props) {
           <i className="fa fa-align-right" onClick={handleSideBar} style={{fontSize:'20px'}}></i>
         </div>
         <div  className="close" id='close' onClick={hideSideBar}>
-            <p>x</p>
+         <i className="fa fa-close" style={{fontSize:"25px"}}></i>
         </div>
         <div className='contacts'>
           <a href="https://github.com/micky-4u" target='_blank' ><Image src={github} alt=''/></a>

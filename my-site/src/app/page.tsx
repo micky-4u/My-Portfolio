@@ -11,6 +11,7 @@ import CertificationCard from "@/components/certification-card";
 import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 import Sidebar from "@/components/sidebar"
+import me from "../../public/images/profile/me1.jpg"
 // import cv from "@/utils/cv/Michael_Tetteh_cv.pdf";
 // images
 
@@ -43,6 +44,11 @@ export default function Home() {
     <Header />
     <Sidebar />
     <div className="main" id="Home">
+      <div className="imageSection">
+        <div>
+          <Image src={me} alt="" />
+        </div>
+      </div>
       <div className="content" >
        <h1>Hi,</h1>
        <h1>I'm Michael Laryea Tetteh</h1>

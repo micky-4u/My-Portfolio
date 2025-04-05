@@ -12,16 +12,19 @@ export default function Sidebar(){
         <div className="sidebar" id="sidebar">
             <div className="sideContact">
                 <div>
-                <a href="https://github.com/micky-4u" target='_blank' ><Image src={github} alt=''/></a>
+                <a href="https://github.com/micky-4u" target='_blank' ><Image src={github} alt=''/>
                     <p>Github</p>
+                </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/michael-tetteh-a5a9a6220/" target='_blank'><Image src={linkedIn} alt=''/></a>
+                    <a href="https://www.linkedin.com/in/michael-tetteh-a5a9a6220/" target='_blank'><Image src={linkedIn} alt=''/>
                     <p>LinkedIn</p>
+                    </a>
                 </div>
                 <div>
-                <a href="mailto:laryeamichael4u@gmail.com" target='_blank'><Image src={mail} alt=''/></a>
+                <a href="mailto:laryeamichael4u@gmail.com" target='_blank'><Image src={mail} alt=''/>
                     <p>Gmail</p>
+                </a>
                 </div>
                 <div>
                     <Image src={phone} alt="git" />

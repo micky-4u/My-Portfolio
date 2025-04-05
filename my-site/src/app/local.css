@@ -74,6 +74,10 @@
     gap: 10px;
     margin-left: 20px;
 }
+.sideContact div a{
+    display: flex;
+    gap: 20px;
+}
 
 .header .contacts{
     display: flex;
@@ -162,7 +166,28 @@
     font-size: 2rem;
 
 }
+.main .imageSection{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 200px;
+}
 
+.main .imageSection div{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    overflow: hidden;
+}
+.main .imageSection div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .content p{
     font-size: 1.2rem;
     font-weight: 200;
@@ -389,6 +414,7 @@
         align-items: center;
         padding-left: 0px;
         padding: 5px;
+        margin-top: 53px;
     }
     .content h1, .projects h1, .certifications h1, .production-tools h1{
         font-weight: 600;
@@ -411,6 +437,9 @@
         transform: scale(1.2);
     }
 
+    .main .imageSection{
+        display: flex;
+    }
     .main hr{
         display: none;
     }
