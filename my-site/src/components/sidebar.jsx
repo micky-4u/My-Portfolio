@@ -28,7 +28,7 @@ export default function Sidebar(){
                 </div>
                 <div>
                     <Image src={phone} alt="git" />
-                    <p>+233 55 969 5990</p>
+                    <p>+233 55 868 5990</p>
                 </div>
             </div>
         </div>
