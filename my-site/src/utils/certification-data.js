@@ -3,6 +3,7 @@ import security from "../../public/images/security.png";
 import networking from "../../public/images/linux1.png";
 import image from "../../public/images/image.png";
 import cloud from "../../public/images/cloud.png";
+import ops from "../../public/images/ops.png";
 
 
 export const certificationData = [
@@ -50,6 +51,15 @@ export const certificationData = [
         "link": "https://www.credly.com/badges/aa8da78d-67f9-4ddb-ae9b-c78e20264332/linked_in_profile",
         "description": "This is a certification about something",
         "imagePaths": networking
+}
+},
+{
+    "id": 6,
+    "title": "AWS Educate Getting Started with Cloud Ops",
+    "metadata": {
+        "link": "https://www.credly.com/badges/877b9b73-52e4-4a71-b92c-10ecd5b8390d/linked_in_profile",
+        "description": "This is a certification about something",
+        "imagePaths": ops
 }
 }
 ]   
