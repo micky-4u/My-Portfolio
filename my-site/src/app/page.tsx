@@ -74,7 +74,7 @@ export default function Home() {
         <h1> Projects</h1>
         <div className="projectFilter" >
         <i className="material-icons">search</i>
-          <input value={`${query}`} type="text" placeholder="Enter a category   Eg: Web Application, Cloud Computing, Machine Learning" />
+          <input onChange={(e) => setQuery(e.target.value)} value={`${query}`} type="text" placeholder="Eg: Web Development, Cloud Computing, Machine Learning" />
         </div>
 
         {isOpen &&(
