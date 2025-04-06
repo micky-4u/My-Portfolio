@@ -11,9 +11,11 @@ import git from "../../public/images/git.png";
 import { strictEqual } from "assert";
 
 export const projectsData = [
+   
     {
         "id": 1,
         "title": "Learning Management System",
+        "type": "Web Development",
         "metadata": {
             "link": "https://github.com/micky-4u/Prudent-Child-School",
             "description": "This is a project about something",
@@ -25,6 +27,7 @@ export const projectsData = [
     {
         "id": 6,
         "title": "LightView Insurance App",
+        "type": "Web Development",
         "metadata": {
             "link": "https://github.com/micky-4u/LightView-Insurance",
             "description": "This is a project about something",
@@ -34,8 +37,21 @@ export const projectsData = [
         }
     },
     {
+        "id": 7,
+        "title": "Enhancing Unsupervised Signature Verification through Advanced Feature Extraction Techniques",
+        "type": "Machine Learning",
+        "metadata": {
+            "link": "https://www.researchsquare.com/article/rs-4249016/v1",
+            "description": "This is a project about something",
+            "imagePaths": [],
+            "tools" : [python],
+            "type": "Personal"
+        }
+    },
+    {
         "id": 2,
         "title": "Real Estate Website",
+        "type": "Web Development",
         "metadata": {
             "link": "https://github.com/micky-4u/Real-Estate",
             "description": "This is a project about something",
@@ -49,6 +65,7 @@ export const projectsData = [
     {
         "id": 3,
         "title": "Circa Website",
+        "type": "Web Development",
         "metadata": {
             "link": "https://github.com/micky-4u/Circa-Website",
             "description": "This is a project about something",
@@ -60,6 +77,7 @@ export const projectsData = [
     {
         "id": 4,
         "title": "Prompt-Rocket Website",
+        "type": "Web Development",
         "metadata": {
             "link": "https://github.com/micky-4u/Prompt-Rocket",
             "description": "This is a project about something",

@@ -8,7 +8,7 @@ import ProjectCard from "@/components/project-card";
 import { metadata } from "./layout";
 import {certificationData} from "@/utils/certification-data";
 import CertificationCard from "@/components/certification-card";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Footer from "@/components/footer";
 import Sidebar from "@/components/sidebar"
 import me from "../../public/images/profile/me1.jpg"
@@ -19,23 +19,31 @@ import me from "../../public/images/profile/me1.jpg"
 export default function Home() {
   const [bg, setBg]=useState("")
   const [bg1, setBg1]=useState("")
+  const [isOpen, setIsOpen] = useState(false);
+  // const dropdownRef = useRef();
+  const projectType =["Web Development","Cloud Computing","Machine Learning","Data Science"]
+
+  const [query, setQuery] = useState('');
+
+  const filteredData = projectsData.filter((item) =>
+    item["type"].toLowerCase().includes(query.toLowerCase())
+  );
+  
   
       // useEffect(()=>{
-      //   window.onscroll =()=>{
-          
-      //     if(scrollY > 277){
-      //       setBg("")
-      //       // console.log(scrollY)
+      //   const handleOutsideClick = (e) => {
+      //     // You can add more logic here to check if the click was outside a ref element
+      //     if (isOpen) {
+      //       setIsOpen(false);
+      //       console.log("Dropdown closed");
       //     }
-          
-          
-      //     if(scrollY > 1250){
-      //       setBg1("")
-      //       // console.log(scrollY)
-      //     } 
-
+      //   };
+      //   document.addEventListener("mousedown", handleOutsideClick);
+      //   return () => {
+      //     document.removeEventListener("mousedown", handleOutsideClick);
       //   }
-      // },[])
+
+      // },[isOpen])
  
 
 
@@ -64,12 +72,27 @@ export default function Home() {
       {/* Personal Projects  */}
       <div className="projects" id="Projects">
         <h1> Projects</h1>
-        <div className="search">
-          <input type="text" placeholder="Search" />
+        <div className="projectFilter" >
+        <i className="material-icons">search</i>
+          <input value={`${query}`} type="text" placeholder="Enter a category   Eg: Web Application, Cloud Computing, Machine Learning" />
         </div>
 
+        {isOpen &&(
+
+            <div className={`dropdown ${isOpen ? 'slideDown' : 'slideUp'}`}>
+            <ul>
+            {projectType.map((type, index) => (
+              <li key={index} onClick={() =>{ setQuery(type); setIsOpen(!isOpen)}} className="dropdown-item">
+                {type}
+              </li>
+            ))}
+            </ul>
+
+          </div>
+        )}
+
         <div className="items">
-          {projectsData.map((project) => (
+          {filteredData.map((project) => (
             <ProjectCard key={project["id"]} title={project["title"]} metadata={project} />
           ))}
         </div>

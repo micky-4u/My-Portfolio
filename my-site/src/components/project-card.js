@@ -8,11 +8,14 @@ export default function ProjectCard(props) {
         <div className="project-card">
             <div className="title">
                 <h2>{title}</h2>
-                <div>
+                <div >
                     <p>{metadata["metadata"]["type"]}</p>
                 </div>
 
             </div>
+                <div className="type">
+                    <p>{metadata["type"]}</p>
+                </div>
             <div className="tools">
                 
                 {metadata["metadata"]["tools"].map((tool, index) => {
@@ -24,7 +27,10 @@ export default function ProjectCard(props) {
                 })}
             </div>
             {/* <p>{metadata["metadata"]["link"]}</p> */}
+            <div>
+
             <button onClick={() => window.open(metadata["metadata"]["link"], "_blank")}>View </button>
+            </div>
 
         </div>
     );
