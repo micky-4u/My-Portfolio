@@ -145,13 +145,20 @@
 .content{
     display: flex;
     padding-left: 50px;
-    margin-top: 280px;
+    margin-top: 180px;
     animation-name:showIn;
     animation-duration: 2s;
+    justify-content: center;
+    align-items: center;
 }
 .content{
-    flex-direction: column;
+    flex-direction: row;
 
+}
+.content .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content h1, .projects h1, .certifications h1, .production-tools h1{
@@ -167,16 +174,15 @@
 
 }
 .main .imageSection{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 110px;
 }
 
 .main .imageSection div{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: #fff;
     object-fit: cover;
@@ -184,7 +190,7 @@
 }
 .main .imageSection div img{
     width: 100%;
-    height: 250px;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -192,7 +198,7 @@
     font-size: 1.2rem;
     font-weight: 200;
     margin-bottom: 20px;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -241,7 +247,7 @@
     
 }
 .projects .projectFilter input::placeholder{
-    color: #dddddd;
+    color: #bdbbbb;
     font-weight: 100;
     font-size: 12px;
 }
@@ -486,9 +492,16 @@
     }
     .content{
         align-items: center;
+        flex-direction: column-reverse;
         padding-left: 0px;
         padding: 5px;
         margin-top: 53px;
+    }
+    .content .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .content h1, .projects h1, .certifications h1, .production-tools h1{
         font-weight: 600;
@@ -513,6 +526,26 @@
 
     .main .imageSection{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        
+    }
+    .main .imageSection div{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #fff;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .main .imageSection div img{
+        width: 100%;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
     }
     .main hr{
         display: none;

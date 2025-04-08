@@ -52,17 +52,19 @@ export default function Home() {
     <Header />
     <Sidebar />
     <div className="main" id="Home">
-      <div className="imageSection">
-        <div>
-          <Image src={me} alt="" />
-        </div>
-      </div>
       <div className="content" >
-       <h1>Hi,</h1>
-       <h1>I'm Michael Laryea Tetteh</h1>
-       <h1>Software Engineer</h1>
-        <p>I'am passionate about building scalable and efficient solutions. I specialize in web and software development, creating intuitive and high-performing applications and building cloud based solutions.</p>
-        <a href="../utils/cv/Michael_Tetteh_cv.pdf" download><button className='button'>Download CV</button></a>
+        <div className="info">
+          <h1>Hi,</h1>
+          <h1>I'm Michael Laryea Tetteh</h1>
+          <h1>Software Engineer</h1>
+          <p>I'am passionate about building scalable and efficient solutions. I specialize in web and software development, creating intuitive and high-performing applications and building cloud based solutions.</p>
+          <a href="../utils/cv/Michael_Tetteh_cv.pdf" download><button className='button'>Download CV</button></a>
+        </div>
+        <div className="imageSection">
+          <div>
+            <Image src={me} alt="" />
+          </div>
+        </div>
 
       </div>
 
