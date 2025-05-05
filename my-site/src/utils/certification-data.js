@@ -4,9 +4,19 @@ import networking from "../../public/images/linux1.png";
 import image from "../../public/images/image.png";
 import cloud from "../../public/images/cloud.png";
 import ops from "../../public/images/ops.png";
+import restart from "../../public/images/restart.png";
 
 
 export const certificationData = [
+    {
+        "id": 7,
+        "title": "AWS re/Start Graduate",
+        "metadata": {
+            "link": "https://www.credly.com/badges/be669d2f-dc1f-4db3-bc81-e87af86339fc/linked_in_profile",
+            "description": "This is a certification about something",
+            "imagePaths": restart
+    }
+    },
     {
         "id": 4,
         "title": "AWS Educate Introduction to Cloud 101",
