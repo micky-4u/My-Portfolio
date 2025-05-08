@@ -5,9 +5,19 @@ import image from "../../public/images/image.png";
 import cloud from "../../public/images/cloud.png";
 import ops from "../../public/images/ops.png";
 import restart from "../../public/images/restart.png";
+import awscl from "../../public/images/awsclp.png";
 
 
 export const certificationData = [
+    {
+        "id": 8,
+        "title": "AWS Certified Cloud Practitioner",
+        "metadata": {
+            "link": "https://www.credly.com/badges/472d2918-2e67-411a-b6ea-d15d1ef8a022/linked_in_profile",
+            "description": "This is a certification about something",
+            "imagePaths": awscl
+    }
+    },
     {
         "id": 7,
         "title": "AWS re/Start Graduate",
