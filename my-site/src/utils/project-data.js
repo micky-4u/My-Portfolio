@@ -8,10 +8,23 @@ import sql from "../../public/images/sql.png";
 import pos from "../../public/images/pos.png";
 import aws from "../../public/images/aws.png";
 import git from "../../public/images/git.png";
+import laravel from "../../public/images/laravel.png";
+
 import { strictEqual } from "assert";
 
 export const projectsData = [
-   
+    {
+        "id": 8,
+        "title": "Activity Tracking System",
+        "type": "Web Development",
+        "metadata": {
+            "link": "https://github.com/micky-4u/Activity-Tracking-App",
+            "description": "This is a project about something",
+            "imagePaths": [],
+            "tools" : [laravel,react],
+            "type": "Personal"
+        }
+    },
     {
         "id": 1,
         "title": "Learning Management System",
@@ -88,4 +101,4 @@ export const projectsData = [
     }
 ]
 
-export const productionTools =[python,sql,pos,js,dj,aws,git,html,css]
+export const productionTools =[python,sql,pos,js,dj,aws,git,html,css,react,laravel]
